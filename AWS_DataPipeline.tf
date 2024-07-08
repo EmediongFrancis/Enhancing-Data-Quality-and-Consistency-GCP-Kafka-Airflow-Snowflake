@@ -1,40 +1,39 @@
 resource "aws_datapipeline_pipeline" "data_movement_pipeline" {
   name        = "madhatter_data_movement_pipeline"
   description = "Pipeline for moving data between S3 buckets"
-  role_arn    = aws_iam_role.datapipeline_role.arn
 
-  parameter_objects {
-    id = "myS3InputLocation"
-    attributes {
-      key   = "type"
-      value = "AWS::S3::ObjectKey"
-    }
-    attributes {
-      key   = "description"
-      value = "The S3 input location"
-    }
-  }
+  # parameter_objects {
+  #   id = "myS3InputLocation"
+  #   attributes {
+  #     key   = "type"
+  #     value = "AWS::S3::ObjectKey"
+  #   }
+  #   attributes {
+  #     key   = "description"
+  #     value = "The S3 input location"
+  #   }
+  # }
 
-  pipeline_objects = [
-    {
-      id   = "Default"
-      name = "Default"
-      fields = [
-        {
-          key   = "scheduleType"
-          value = "cron"
-        },
-        {
-          key   = "failureAndRerunMode"
-          value = "CASCADE"
-        },
-        {
-          key   = "pipelineLogUri"
-          value = "s3://${aws_s3_bucket.raw_data_bucket.bucket}/logs"
-        }
-      ]
-    }
-  ]
+  # pipeline_objects = [
+  #   {
+  #     id   = "Default"
+  #     name = "Default"
+  #     fields = [
+  #       {
+  #         key   = "scheduleType"
+  #         value = "cron"
+  #       },
+  #       {
+  #         key   = "failureAndRerunMode"
+  #         value = "CASCADE"
+  #       },
+  #       {
+  #         key   = "pipelineLogUri"
+  #         value = "s3://${aws_s3_bucket.raw_data_bucket.bucket}/logs"
+  #       }
+  #     ]
+  #   }
+  # ]
 }
 
 # IAM Role for DataPipeline
