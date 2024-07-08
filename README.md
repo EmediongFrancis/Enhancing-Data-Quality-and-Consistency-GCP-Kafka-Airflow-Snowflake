@@ -56,7 +56,7 @@ In our data quality and consistency solution, `AWS Glue` is used for its powerfu
 `Amazon Redshift` is a fast, fully managed data warehouse that makes it simple and cost-effective to analyze large volumes of data using SQL. It enables running complex queries and performing sophisticated analytics on big data.
 
 <div style="text-align: center;">
-    <img src="assets/Redshift.png" alt="Amazon Redshift" width="200" height="200">
+    <img src="assets/RedShift.png" alt="Amazon Redshift" width="200" height="200">
 </div>
 
 #### Key Features:
