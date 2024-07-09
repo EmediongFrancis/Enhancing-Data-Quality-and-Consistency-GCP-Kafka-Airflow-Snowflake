@@ -9,7 +9,7 @@ The lack of standardized data quality and consistency across these disparate sou
 
 To address these challenges, `MadHatter Corp.` developed a comprehensive solution to ensure data quality and consistency. This solution leverages AWS Glue for data cataloging and ETL tasks, AWS DataBrew for visual data preparation, and Amazon Redshift for high-quality data storage and analysis. Additionally, Amazon RDS is used to maintain the integrity of relational databases.
 
-By implementing this architecture, MadHatter Corp. has significantly improved the quality and consistency of its data. The solution ensures that all data sources are cleaned, normalized, and integrated, providing a solid foundation for analytics and reporting. This enables MadHatter Corp. to generate accurate business insights, make data-driven decisions, and maintain a competitive edge in the market.
+By implementing this architecture, `MadHatter Corp.` has significantly improved the quality and consistency of its data. The solution ensures that all data sources are cleaned, normalized, and integrated, providing a solid foundation for analytics and reporting. This enables MadHatter Corp. to generate accurate business insights, make data-driven decisions, and maintain a competitive edge in the market.
 
 ## AWS Tools Used - DeepDive
 ![Data Q&C Architecture](assets/Pipeline-2.jpg)
